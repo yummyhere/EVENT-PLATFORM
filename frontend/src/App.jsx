@@ -13,6 +13,9 @@ const EventDetail = lazy(() => import('./pages/EventDetail'));
 const MyBookings = lazy(() => import('./pages/MyBookings'));
 const Login = lazy(() => import('./pages/Login'));
 const Register = lazy(() => import('./pages/Register'));
+const About = lazy(() => import('./pages/About'));
+const Categories = lazy(() => import('./pages/Categories'));
+const Contact = lazy(() => import('./pages/Contact'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 export const App = () => {
@@ -29,6 +32,9 @@ export const App = () => {
             {/* Public Event Browsing */}
             <Route path="/events" element={<Events />} />
             <Route path="/events/:id" element={<EventDetail />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/categories" element={<Categories />} />
+            <Route path="/contact" element={<Contact />} />
 
             {/* Auth Pages */}
             <Route path="/login" element={<Login />} />

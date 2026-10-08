@@ -33,9 +33,24 @@ export const Navbar = () => {
           >
             Events
           </NavLink>
-          <a href="#" className="nav-center-link">About</a>
-          <a href="#" className="nav-center-link">Categories</a>
-          <a href="#" className="nav-center-link">Contact</a>
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? 'nav-center-link active' : 'nav-center-link')}
+          >
+            About
+          </NavLink>
+          <NavLink
+            to="/categories"
+            className={({ isActive }) => (isActive ? 'nav-center-link active' : 'nav-center-link')}
+          >
+            Categories
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => (isActive ? 'nav-center-link active' : 'nav-center-link')}
+          >
+            Contact
+          </NavLink>
         </nav>
 
         {/* Right Side Auth Actions */}
